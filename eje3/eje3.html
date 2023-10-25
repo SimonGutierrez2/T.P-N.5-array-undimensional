@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var altura=[]
+        var personaalta=0
+        var personabaja=0
+        suma=0
+        i=0
+        for (i = 0; i < 5; i++) {
+            var persona= parseFloat(prompt("ingrese su altura"))
+            altura.push(persona)
+            document.write(altura[i]+ " ")
+            suma = altura=[i] + suma
+        }
+        promedio = suma/5
+        for ( i = 0; i < 5; i++) {
+            if(promedio > altura[i] ){ 
+                personabaja++
+            }else if(promedio<altura[i]){ 
+                personaalta++
+            }
+        }
+        document.write("br")
+        document.write(promedio)
+        document.write("las cantidad de personas altas es: "+personaalta)
+        document.write("las cantidad de personas bajas es: "+personabaja)
+    </script>
+</body>
+</html>
